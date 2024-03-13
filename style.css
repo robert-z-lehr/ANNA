@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px;
+    font-size: 14px; /* Adjust based on your preference */
+    cursor: pointer;
+    border: 1px solid #333; /* Adjust border color as needed */
+    border-radius: 5px;
+    background-color: #cc5500; /* Adjust background color as needed */
+    color: #333; /* Text color */
+    max-width: 300px; /* Maximum width of the button */
+    display: inline-block;
+    text-align: center; /* Align text to the center */
+    white-space: normal; /* Ensure text wraps */
+    margin: 5px; /* Space between buttons */
+    overflow-wrap: break-word; /* Ensures words break to avoid stretching the button */
+}
+
+
+button:hover {
+    background-color: #45a049;
+}
+
+.responses-container {
+    display: flex; /* Use Flexbox for layout */
+    justify-content: space-around; /* Space out the children */
+    width: 100%; /* Full width */
+    margin-bottom: 20px;
+}
+
+.response-container {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    width: 30%; /* Each box takes up 30% of the container width */
+    min-height: 150px;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.chatbot-space {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #ddd;
+    width: 80%;
+    min-height: 100px;
+    text-align: center;
+}
+
+.custom-hr {
+    width: 100%; /* Full width */
+    height: 2px; /* Thickness of the line */
+    background-color: #333; /* Line color */
+    margin: 20px 0; /* Vertical spacing above and below the line */
+}
