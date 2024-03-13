@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorations with ANNA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>ANNA: Your Analogous Neural Network Assistant</h1>
+    <h2>Empowering Inquisitive Minds Through AI-Driven Insights</h2>
+    
+    <div class="custom-hr"></div> <!-- Custom horizontal divider -->
+    <div class="buttons-container">
+        <button onclick="showResponse('api', 'apiResponse')">
+            <span style="font-weight: bold;">Explain APIs:</span><br>
+            <span><em>---ChatGPT Prompt---</em></span><br>
+            I do not understand what APIs are. Could you help me understand what they are through the use of 5 intuitive analogies, similes, parables, or metaphors?
+        </button>
+        <button onclick="showResponse('hackathon', 'hackathonResponse')">
+            <span style="font-weight: bold;">Demystify Hackathons:</span><br>
+            <span><em>---ChatGPT Prompt---</em></span><br>
+            I do not understand what hackathons are. Could you help me understand what they are through the use of 5 intuitive analogies, similes, parables, or metaphors?
+        </button>
+        <button onclick="showResponse('philosophies', 'philosophiesResponse')">
+            <span style="font-weight: bold;">Unravel Philosophies:</span><br>
+            <span><em>---ChatGPT Prompt---</em></span><br>
+            I do not understand what the key differences are between socialism, communism, capitalism, fascism, corporatism, and the other common economic and social philosophies. Could you help me understand what they are through the use of 5 intuitive analogies, similes, parables, or metaphors?
+        </button>        
+    </div>
+
+    <div class="responses-container">
+        <div id="apiResponse" class="response-container"></div>
+        <div id="hackathonResponse" class="response-container"></div>
+        <div id="philosophiesResponse" class="response-container"></div>
+    </div>
+
+    <div id="chatbotSpace" class="chatbot-space">
+        <p>Future Integration: LLM Q&A interface</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
