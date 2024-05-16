@@ -1,5 +1,7 @@
 # Additional files to ignore
-config.py
+.DS_Store
+archive/version_1/config.py
+node_modules/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

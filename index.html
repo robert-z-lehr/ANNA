@@ -1,52 +1,24 @@
 <!DOCTYPE html>
+<html lang="en">
 
-    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>A.N.N.A. - The Analogous Neural Network Assistant</title>
+        <link rel="stylesheet" href="styles.css"> <!-- Link to the .css file stylesheet. Ensure the path to the CSS file is correct -->
+    </head>
 
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Explorations with ANNA</title>
-            <link rel="stylesheet" href="style.css">
-        </head>
+    <body>
+        <h1>Welcome to A.N.N.A.</h1>
+        <p>Type your query below:</p>
+        <input type="text" id="userQuery" placeholder="Enter your query here">
+        <button onclick="fetchResponse()">
+            Submit
+        </button>
+        <div id="responseArea">
+            Response will appear here.
+        </div>
+        <script src="script.js"></script> <!-- Link to the .js file script. Ensure the path to the JavaScript file is correct -->
+    </body>
 
-        <body>
-            <h1>ANNA: Your Analogous Neural Network Assistant</h1>
-            <h2>Empowering Inquisitive Minds Through AI-Driven Insights</h2>
-            
-            <div class="custom-hr"></div> <!-- Custom horizontal divider -->
-
-            <div class="buttons-container">
-                <button onclick="showResponse('api', 'apiResponse')">
-                    <span style="font-weight: bold;">Explain APIs:</span><br>
-                    <span><em>---ChatGPT Prompt---</em></span><br>
-                    I do not understand what APIs are. Could you help me understand what they are through the use of 5 intuitive analogies, similes, parables, or metaphors?
-                </button>
-
-                <button onclick="showResponse('hackathon', 'hackathonResponse')">
-                    <span style="font-weight: bold;">Demystify Hackathons:</span><br>
-                    <span><em>---ChatGPT Prompt---</em></span><br>
-                    I do not understand what hackathons are. Could you help me understand what they are through the use of 5 intuitive analogies, similes, parables, or metaphors?
-                </button>
-
-                <button onclick="showResponse('philosophies', 'philosophiesResponse')">
-                    <span style="font-weight: bold;">Unravel Philosophies:</span><br>
-                    <span><em>---ChatGPT Prompt---</em></span><br>
-                    I do not understand what the key differences are between socialism, communism, capitalism, fascism, corporatism, and the other common economic and social philosophies. Could you help me understand what they are through the use of 5 intuitive analogies, similes, parables, or metaphors?
-                </button>
-            </div>
-
-            <div class="responses-container">
-                <div id="apiResponse" class="response-container"></div>
-
-                <div id="hackathonResponse" class="response-container"></div>
-
-                <div id="philosophiesResponse" class="response-container"></div>
-            </div>
-
-            <iframe src="https://chat.socialintents.com/c/chat-1710307042288" width="100%" style="height:100%;min-height:550px;" frameborder="0"></iframe>
-
-            <script src="script.js"></script>
-            <script src="//www.socialintents.com/api/chat/socialintents.1.3.js#2c9fa6c38e3575b4018e363e63f20033" async="async"></script>
-        </body>
-
-    </html>
+</html>
