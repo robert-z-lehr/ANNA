@@ -2,6 +2,7 @@
 .DS_Store
 archive/version_1/config.py
 node_modules/
+notebook.ipynb
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
