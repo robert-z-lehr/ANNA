@@ -47,7 +47,7 @@ function fetchResponse() {
         return;
     }
 
-    fetch("https://YOUR_CLOUD_FUNCTION_URL", { // Replace with the actual URL of your deployed Cloud Function
+    fetch("https://us-central1-anna-423302.cloudfunctions.net/processOpenAIRequest", { // Replace with the actual URL of your deployed Cloud Function
         method: "POST",
         headers: {
             "Content-Type": "application/json",
